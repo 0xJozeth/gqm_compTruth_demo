@@ -1,0 +1,10 @@
+{
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "html"
+  ],
+  "lit-html.format.enabled": true,
+  "lit-html.linting.template": true,
+  "lit-html.linting.html": true
+}

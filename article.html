@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Article - Compelling Truth</title>
+
+        <!-- "Import" the Header, Breadcrumb and Footer elements respectively-->
+        <script rel="preload" type="module" src="components/header-element.js"></script>
+        <script type="module" src="components/footer-element.js" defer></script>
+        <script type="module" src="components/breadcrumb-element.js" defer></script>
+
+        <!-- link to Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+        <script src="script.js" defer></script>
+
+        <!-- link to stylesheet AFTER the style tag here to improve lighthouse (Eliminate render-blocking resources) -->
+        <link rel="stylesheet" href="src/style.css">
+
+        
+    </head>
+    <body>
+        <!-- Logo and Menu -->
+        <header-element></header-element>
+        <main>
+            <breadcrumb-element></breadcrumb-element>
+            <!-- Article page content -->
+        </main>
+        <footer-element></footer-element>
+    </body>
+</html>
