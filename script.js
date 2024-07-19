@@ -223,6 +223,7 @@ function createGuideHtml(guide) {
             </div>
         </div>
     `;
+    
     return guideHtml;
 }
 
