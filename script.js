@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // this is just some sample data for recent guides, we can pull this from a db or CMS
 const recentGuides = [
     {
-        image: "../src/assets/images/Guide_img_1.webp",
+        image: "../src/assets/images/guide_img_1.webp",
         marquee: "the guide to",
         marqueeHeading: "women in the new testament",
         links: [
@@ -165,7 +165,7 @@ const recentGuides = [
     },
     // can either add guide objects here or pull from a db
     {
-        image: "../src/assets/images/Guide_img_2.webp",
+        image: "../src/assets/images/guide_img_2.webp",
         marquee: "the guide to",
         marqueeHeading: "Consequences of Sin",
         links: [
@@ -177,7 +177,7 @@ const recentGuides = [
         ]
     },
     {
-        image: "../src/assets/images/Guide_img_3.webp",
+        image: "../src/assets/images/guide_img_3.webp",
         marquee: "the guide to",
         marqueeHeading: "Apologetics of the Bible",
         links: [
@@ -201,7 +201,6 @@ function createGuideHtml(guide) {
                     </div>
                     <div class="recentGuideMarqueeAccent"></div>
                 </div>
-
                 <div id="recentGuideImageMarqueeHeading" class="recentGuideImageMarqueeHeading">
                     <h2>${guide.marqueeHeading}</h2>
                 </div>

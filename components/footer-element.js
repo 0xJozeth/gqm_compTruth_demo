@@ -20,6 +20,7 @@ class FooterElement extends HTMLElement {
                             loading="lazy"
                             src="../src/assets/logos/compelling_truth_logo.svg"
                             alt=""
+                            class="compTruthLogo"
                         >
                     </a>
                 </div>

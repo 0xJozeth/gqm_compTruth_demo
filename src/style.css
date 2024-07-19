@@ -271,7 +271,8 @@ nav ul {
         justify-content: start;
         align-items: center;
         width: 100%;
-        font-size: 1rem;    
+        max-height: 40px;
+        font-size: .9rem;    
         padding: 0.0125rem 0rem;
         color: #333;
         text-transform: capitalize;
@@ -287,6 +288,7 @@ nav ul {
         justify-content: start;
         align-self: center;
         width: 100%;
+        max-height: 40px;
         font-size: 1.25rem;
         font-weight: 300;    
         padding: 0.625rem 1.25rem;
@@ -345,14 +347,14 @@ body {
 
 .compTruthLogo {
     width: 144px;
-    height: 42px;
+    height: auto;
     transition: width 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
     .compTruthLogo {
-        width: 164px;
-        height: 44px;
+        width: 196.8px;
+        height: auto;
     }
 }
 
@@ -621,7 +623,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .taglineContainer span {
-        font-size: 30px;
+        font-size: 38px;
     }
 }
 
@@ -801,8 +803,11 @@ body {
 
     & :hover {
         background-color: transparent;
-    
     }
+}
+
+.GodIcon {
+    margin-bottom: 4rem;
 }
 
 .reduceLargeIcons {
@@ -1017,7 +1022,7 @@ body {
 @media screen and (min-width: 768px) {
     .theTruthAboutCategoriesHeader {
         position: absolute;
-        height: 100px;
+        height: 66px;
         top: 0px;
         left: 0;
         right: 0;
@@ -1169,7 +1174,7 @@ body {
     gap: 1rem;
 
     & h2 {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         white-space: nowrap;
         font-size: var(--heading-2-desktop);
@@ -1183,7 +1188,8 @@ body {
     }
 
     & a {
-        font-size: .8rem;
+        font-size: .9rem;
+        font-weight: 600;
         color: #EC7140;
         text-transform: capitalize;
         text-decoration: underline;
@@ -1429,7 +1435,7 @@ body {
     gap: 1rem;
 
     & h2 {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         white-space: nowrap;
         font-size: var(--heading-2-desktop);
@@ -2357,11 +2363,6 @@ body {
     margin: 0 auto;
     padding: 2rem 0;
     z-index: 5;
-
-    & img {
-        width: 150px;
-        height: 44px;
-    }
 }
 
 .footerImage {
@@ -2576,7 +2577,7 @@ body {
     & h1.articleTitle {
         width: 100%;
         font-size: 2.25rem;
-        font-weight: 600;
+        font-weight: 700;
         color: #244C4F;
         text-align: left;
         margin-bottom: 2.5rem;
@@ -2816,7 +2817,7 @@ body {
 
     & h3 {
         font-size: 1.25rem;
-        font-weight: 600;
+        font-weight: 700;
         color: #244C4F;
         text-align: left;
                 text-transform: uppercase;

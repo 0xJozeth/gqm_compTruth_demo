@@ -149,7 +149,7 @@ class HeaderElement extends HTMLElement {
                                     id="menuHome" 
                                     src="../src/assets/images/menuIcons/menuHome.png" 
                                     alt="home"
-                                    class="menuIcons GodIcon"
+                                    class="menuIcons"
                                 >
                                 home
                             </a>
