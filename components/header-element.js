@@ -135,7 +135,7 @@ class HeaderElement extends HTMLElement {
                     <img
                         loading="lazy" 
                         id="compTruthLogo" 
-                        src="../src/assets/Logos/compelling_truth_logo.svg" 
+                        src="../src/assets/logos/compelling_truth_logo.svg" 
                         alt="CompTruth Logo"
                         class="compTruthLogo"
                     >
