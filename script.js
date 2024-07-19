@@ -195,9 +195,13 @@ function createGuideHtml(guide) {
     const guideHtml = `
         <div id="recentGuide" class="recentGuide">
             <div id="recentGuideImageWrapper" class="recentGuideImageWrapper">
-                <div id="recentGuideImageMarquee" class="recentGuideImageMarquee">
-                    <h2>${guide.marquee}</h2>
+                <div class="marqueeWrapper">
+                    <div id="recentGuideImageMarquee" class="recentGuideImageMarquee">
+                        <h2>${guide.marquee}</h2>
+                    </div>
+                    <div class="recentGuideMarqueeAccent"></div>
                 </div>
+
                 <div id="recentGuideImageMarqueeHeading" class="recentGuideImageMarqueeHeading">
                     <h2>${guide.marqueeHeading}</h2>
                 </div>
