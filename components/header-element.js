@@ -135,7 +135,7 @@ class HeaderElement extends HTMLElement {
                     <img
                         loading="lazy" 
                         id="compTruthLogo" 
-                        src="../src/assets/logos/Logo.png" 
+                        src="../src/assets/Logos/compelling_truth_logo.svg" 
                         alt="CompTruth Logo"
                         class="compTruthLogo"
                     >
@@ -203,7 +203,6 @@ class HeaderElement extends HTMLElement {
                                 about</a>
                         </li>
                         <li>
-                            
                             <a href="/" aria-label="Donate">
                                 <img
                                     loading="lazy" 

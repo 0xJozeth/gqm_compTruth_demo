@@ -14,11 +14,14 @@ class FooterElement extends HTMLElement {
             <div class="footerBlurElement"></div>
             <div class="footerContainer">
                 <div class="footerLogo">
-                    <img
-                        loading="lazy" 
-                        src="../src/assets/logos/Logo.png" 
-                        alt=""
-                    >
+
+                    <a href="/" rel="noreferrer">
+                        <img
+                            loading="lazy"
+                            src="../src/assets/logos/compelling_truth_logo.svg"
+                            alt=""
+                        >
+                    </a>
                 </div>
                 <div class="footerLinks">
                     <ul>

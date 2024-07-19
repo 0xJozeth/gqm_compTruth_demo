@@ -152,11 +152,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // this is just some sample data for recent guides, we can pull this from a db or CMS
 const recentGuides = [
     {
-        image: "src/assets/images/Guide_img_1.webp",
+        image: "../src/assets/images/Guide_img_1.webp",
         marquee: "the guide to",
         marqueeHeading: "women in the new testament",
         links: [
-            { text: "Who was Mary Magdeline in the Bible?", url: "#" },
+            { text: "Who was Mary Magdalene in the Bible?", url: "#" },
             { text: "Who were Lois & Eunice in the Bible?", url: "#" },
             { text: "Who was Lydia in the Bible?", url: "#" },
             { text: "Who was Joanna in the Bible?", url: "#" },
@@ -165,7 +165,7 @@ const recentGuides = [
     },
     // can either add guide objects here or pull from a db
     {
-        image: "src/assets/images/Guide_img_2.webp",
+        image: "../src/assets/images/Guide_img_2.webp",
         marquee: "the guide to",
         marqueeHeading: "Consequences of Sin",
         links: [
@@ -177,7 +177,7 @@ const recentGuides = [
         ]
     },
     {
-        image: "src/assets/images/Guide_img_3.webp",
+        image: "../src/assets/images/Guide_img_3.webp",
         marquee: "the guide to",
         marqueeHeading: "Apologetics of the Bible",
         links: [
@@ -214,8 +214,8 @@ function createGuideHtml(guide) {
                 </ul>
             </div>
             <div id="recentGuideButtons" class="recentGuideButtons">
-                <button class="recentGuideReadButton">read guide</button>
-                <button class="recentGuideShareButton">share</button>
+                <a href="/content/article.html" rel="noreferrer noopener" class="recentGuideReadButton">read guide</a>
+                <a href="/content/article.html" rel="noreferrer noopener" class="recentGuideShareButton">share</a>
             </div>
         </div>
     `;
@@ -258,11 +258,11 @@ const compellingTruthCards = [
     },
     {
         image: 'src/assets/images/comp_truth_2.webp',
-        title: 'for group <br><span>discussions</span>',
+        title: 'with your <br><span>small group</span>',
     },
     {
         image: 'src/assets/images/comp_truth_3.webp',
-        title: 'for church <br><span>events</span>',
+        title: 'bringing others <br><span>to christ</span>',
     }
 ];
 
