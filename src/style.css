@@ -2302,7 +2302,8 @@ body {
     max-width: 226px;
     gap: 1rem;
     margin: 0 auto;
-    padding: 0rem 1rem;
+    margin-top: 4rem;
+    padding: 0rem;
     z-index: 5;
 
     & ul {
@@ -2331,6 +2332,7 @@ body {
         max-width: 226px;
         gap: 1rem;
         margin: 0 auto;
+        margin-top: 0;
         padding: 0rem 1rem;
         z-index: 5;
 
@@ -2370,7 +2372,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 326px;
+    max-width: 226px;
     width: 100%;
     height: auto;
     gap: 1rem;
