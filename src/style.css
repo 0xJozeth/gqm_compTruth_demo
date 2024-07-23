@@ -346,14 +346,14 @@ body {
 }
 
 .compTruthLogo {
-    width: 144px;
+    width: 200px;
     height: auto;
     transition: width 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
     .compTruthLogo {
-        width: 196.8px;
+        width: 264px;
         height: auto;
     }
 }
