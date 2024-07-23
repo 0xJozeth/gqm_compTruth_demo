@@ -48,7 +48,7 @@ class FooterElement extends HTMLElement {
                         </li>
                     </ul>
                 </div>
-                <div class="footerImage">
+                <div class="footerImageWrapper">
                     <img
                         loading="lazy" 
                         src="../src/assets/images/placeholder_img.png" 

@@ -31,7 +31,7 @@
     --orange-light: rgba(236, 113, 64, .35);
     /* #7D565F as rgba value: */
     --deepOrange-main: rgba(125, 86, 95, .5);
-    --heading-2-desktop: 2rem;
+    --heading-2-desktop: 1.9rem; /* TODO: add clamp function */
     --heading-2-mobile: 1.75rem;
     --body-md-text: 1.2rem;
     --body-sm-text: .9rem;
@@ -2273,7 +2273,7 @@ body {
 .footerContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
     width: 326px;
@@ -2365,7 +2365,7 @@ body {
     z-index: 5;
 }
 
-.footerImage {
+.footerImageWrapper {
     position: relative;
     display: flex;
     justify-content: center;
