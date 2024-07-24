@@ -22,6 +22,14 @@
 
 }
 
+.no-select {
+    user-select: none; /* Standard */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+
 /* Custom Properties as rgba values */
 
 :root {
@@ -710,7 +718,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 768px;
     gap: 1rem;
     /* vanish effect but beware: this does not remove the element from the DOM */
     transition: opacity 0.5s ease, visibility 0.5s;
@@ -726,22 +734,28 @@ body {
         width: 100%;
     }
 
+    & li {
+        outline: 2px solid rgba(255, 255, 255, 0); /* necessary to prevent the element from shifting when hovered */
+
+    }
+
     & li.theTruthAboutSelectionsDesktopButtons {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
             background-color: rgba(71, 108, 115, .7);
-            padding: .25rem 0;
+            padding: .25rem 8rem;
             width: 186px;
-            height: 186px;
+            height: 88px;
             border-radius: .5rem;
             list-style: none;
             transition: all 0.3s ease;
-            font-size: 1.25rem;
+            font-size: 1.75rem;
             font-weight: 400;
             border-radius: .5rem;
             backdrop-filter: blur(6px);
+            cursor: pointer;
             
 
         & img:hover {
@@ -753,7 +767,6 @@ body {
     }
 
     & .theTruthAboutSelectionsDesktopButtons:hover {
-            scale: 1.025;
             background-color: rgba(236, 113, 64, .35);
             outline: 2px solid rgba(255, 255, 255, .75);
         }
@@ -773,13 +786,12 @@ body {
 }
 
 .theTruthAboutSelectionsDesktop a.selected {
-    font-weight: 500;
     color: #fff;
 }
 
 .theTruthAboutSelectionsDesktop li.selected {
     background: rgba(236, 113, 64, 1);
-    font-weight: 500;
+    /* font-weight: 500; */
     color: rgba(255, 255, 255, 1);
     outline: 2px solid rgba(255, 255, 255, 1);
 }
@@ -787,6 +799,34 @@ body {
 @media screen and (min-width: 768px) {
     .theTruthAboutSelectionsDesktop li.selected {
             background-color: rgba(236, 113, 64, 1);
+    }
+}
+
+.theTruthAboutDesktopUpperRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+.theTruthAboutDesktopLowerRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    /* margin: 1rem 0; */
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
     }
 }
 
@@ -862,7 +902,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .truthAboutIcons {
-        display: none;
+        /* display: none; */
         width: 40px;
     }
     
@@ -1022,7 +1062,9 @@ body {
 @media screen and (min-width: 768px) {
     .theTruthAboutCategoriesHeader {
         position: absolute;
-        height: 66px;
+            row-gap: 0rem;
+
+        height: 124px;
         top: 0px;
         left: 0;
         right: 0;
@@ -1030,7 +1072,7 @@ body {
 }
 
 .theTruthAboutCategoriesHeader img {
-    position:relative;
+    position: relative;
     top: 2rem;
     width: 50px;
     height: auto;
@@ -1039,7 +1081,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .theTruthAboutCategoriesHeader img {
-        position:relative;
+        position: relative;
         top: 1rem;
         width: 50px;
         height: auto;
@@ -1064,7 +1106,6 @@ body {
 @media screen and (min-width: 768px) {
     .theTruthAboutCategoriesHeading {
         top: 0rem;
-
     }
 }
 
