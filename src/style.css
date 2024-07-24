@@ -19,7 +19,6 @@
 
 .box-shadow {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .no-select {
@@ -29,8 +28,58 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
+/*////////////////////////////////////////*/
+/* Toast CSS Configuration */
+/*////////////////////////////////////////*/
 
+/* Toast container */
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-width: 326px;
+}
+
+/* Toast notification */
+.toast {
+    white-space: nowrap;
+    background-color: var(--deepGreen-main);
+    color: #fff;
+    padding: 1.25rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s, padding 0.3s;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .toast {
+        padding: 1.25rem 6rem;
+        white-space: nowrap;
+    }
+    
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.hide {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/*////////////////////////////////////////*/
 /* Custom Properties as rgba values */
+/*////////////////////////////////////////*/
 
 :root {
     --deepGreen-main: rgba(36, 76, 79, 1);
@@ -44,6 +93,7 @@
     --body-md-text: 1.2rem;
     --body-sm-text: .9rem;
     --paragraph-sm-text: .85rem;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
 }
 

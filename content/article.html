@@ -48,11 +48,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         
 
-        <script src="script.js" defer></script>
+        <script src="../script.js" defer></script>
 
         <link rel="stylesheet" href="/src/style.css">
 
-        
+        <!-- import UUID library-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
     </head>
     <body>
         <!-- Logo and Menu -->
@@ -73,6 +74,7 @@
                                 >
                             </button>
                         </div>
+                        <div class="shareable-link-container" id="shareable-link-container"></div>
                         <h1 class="articleTitle">Were any of Jesus' disciples married?</h1>
                         <div class="articleFeaturedImgWrapper">
                             <img 
@@ -235,5 +237,6 @@
             </section>
         </main>
         <footer-element></footer-element>
+        <div id="toast-container"></div>
     </body>
 </html>

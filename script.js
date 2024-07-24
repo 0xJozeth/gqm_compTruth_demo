@@ -270,9 +270,67 @@ const compellingTruthCards = [
     }
 ];
 
-// get the container element
 const useCompellingTruthCardsWrapper = document.querySelector('.useCompellingTruthCardsWrapper');
 
 if (isHomepage) {
 useCompellingTruthCardsWrapper.innerHTML = compellingTruthCards.map(createCompellingTruthCard).join('');
 }
+
+/* UUID generator for shareable link - see article.html file */
+function createShareableLink(baseURL) {
+    const uniqueID = uuid.v4();
+    const shareableURL = `${baseURL}?id=${uniqueID}`;
+    return shareableURL;
+}
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        // console.log('Shareable link copied to clipboard:', text);
+        showToast('Article link copied to clipboard! 🎉');
+    }).catch(err => {
+        console.error('Failed to copy text to clipboard:', err);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const baseURL = window.location.href;
+    const shareButton = document.querySelector('.articleShareButton');
+
+    shareButton.addEventListener('click', () => {
+        const shareableLink = createShareableLink(baseURL);
+        copyToClipboard(shareableLink);
+    });
+});
+
+/*////////////////////////////////////////*/
+/* Toast Javascript configuration (for shareable link) */
+/*////////////////////////////////////////*/
+function showToast(message) {
+    const toastContainer = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.textContent = message;
+    
+    toastContainer.appendChild(toast);
+    requestAnimationFrame(() => {
+        toast.classList.add('show');
+    });
+
+    setTimeout(() => {
+        toast.classList.remove('show');
+        toast.classList.add('hide');
+        toast.addEventListener('transitionend', () => {
+            toastContainer.removeChild(toast);
+        });
+    }, 3000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const baseURL = window.location.href;
+    const shareButton = document.querySelector('.articleShareButton');
+
+    shareButton.addEventListener('click', () => {
+        const shareableLink = createShareableLink(baseURL);
+        copyToClipboard(shareableLink);
+    });
+});
